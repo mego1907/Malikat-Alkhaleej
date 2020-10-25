@@ -1,0 +1,20 @@
+@import "scss/1- helpers/variables";
+@import "scss/1- helpers/mixin";
+
+@import "scss/3- layout/global";
+
+@import "scss/1- helpers/extend";
+@import "scss/2- components/fonts";
+
+@import "scss/3- layout/grid";
+
+@import "scss/2- components/headings";
+@import "scss/2- components/buttons";
+
+@import "scss/3- layout/header";
+
+@import "scss/4- pages/home";
+@import "scss/4- pages/about";
+@import "scss/4- pages/contact";
+
+@import "scss/3- layout/footer"

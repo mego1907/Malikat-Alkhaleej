@@ -1,0 +1,35 @@
+/* Start Footer section */
+.footer{
+    padding: 60px 0;
+    background-color: #333;
+    .col-lg-4{
+        h6{
+            color: #fff;
+            font-size: 22px;
+            padding: 14px 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        ul{
+            li{
+                padding: 10px 0;
+                a{
+                    color: rgba(255,255,255,0.3);
+                    font-size: 16px;
+                    line-height: 1.7;
+                    padding-right: 10px;
+                    &:hover{
+                        color: $primaryColor;
+                        text-decoration: none;
+                    }
+                }
+                p{
+                    color: rgba(#fff, 0.6)
+                }
+                span{
+                    color: rgba(#fff, 0.4)
+                }
+            }
+        }
+    }
+}
+/* End Footer section */

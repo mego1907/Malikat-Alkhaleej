@@ -1,0 +1,51 @@
+//prefix
+@mixin prefixer($prop, $val, $prefixes: (webkit moz o)) {
+    @each $prefix in $prefixes {
+        #{"_" + $prefix + "_" + $prop}: $val;
+    }
+    #{$prop} : $val;
+}
+
+// Size
+@mixin size ($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+// animation
+@mixin animation($args...) {
+    -webkit-animation: $args;
+    -moz-animation: $args;
+    -o-animation: $args;
+    animation: $args;
+}
+
+//keyFrame
+@mixin keyFrame($animation-name) {
+    @-webkit-keyframes #{$animation-name}{
+        @content;
+    }
+    @-moz-keyframes #{$animation-name}{
+        @content;
+    }
+    @keyframes #{$animation-name}{
+        @content;
+    }
+}
+
+// opacity
+@mixin  opacity($val) {
+    zoom: 1;
+    $opacity-ie: $val * 100;
+    filter: alpha(opacity = $opacity-ie);
+    opacity: $val;
+}
+
+// transition
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+

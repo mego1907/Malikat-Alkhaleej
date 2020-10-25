@@ -1,0 +1,8 @@
+.heading{
+    margin-bottom: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    @media (max-width: 767px) {
+        margin-bottom: 2rem;
+    }
+}

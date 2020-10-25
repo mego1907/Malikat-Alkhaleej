@@ -1,0 +1,73 @@
+/* Start Product Section */
+.products-sec{
+    margin-bottom: 30px;
+    display: flex;
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .cart{
+            border: 1px solid #ccc;
+            text-align: center;
+            margin-bottom: 30px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                border: 1px solid $primaryColor;
+                .cart-bottom{
+                    button{
+                        transform: translateY(0);
+                    }
+                }
+            }
+            .cart-top{
+                img{
+                    width: 100%;
+                }
+            }
+            .cart-bottom{
+                .product-name{
+                    padding: 10px;
+                }
+                .sale{
+                    font-size: 14px;
+                    border: 1px solid #00b9f1;
+                    padding: 3px 8px;
+                    color: #00b9f1;
+                }
+                .price{
+                    padding: 15px;
+                    .new-price{
+                        color: $primaryColor;
+                    }
+                    .old-price{
+                        color: rgba(#000, 0.6);
+                        text-decoration: line-through;
+                    }
+                }
+                button{
+                    outline: none;
+                    width: 100%;
+                    border: none;
+                    background: #fe4365;
+                    color: #fff;
+                    padding: 11px;
+                    transform: translateY(50px);
+                    transition: transform 0.3s ease-in-out;
+                    i{
+                        padding-left: 5px;
+                    }
+                }
+            }
+        }
+        .hero-btn{
+            margin: 20px auto;
+            &:hover{
+                color: $primaryColor;
+                border: 1px solid $primaryColor;
+            }
+        }
+    }
+}

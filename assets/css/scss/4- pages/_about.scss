@@ -1,0 +1,81 @@
+/* Start About Company */
+.about-company{
+    padding-bottom: 40px;
+    .col-md-6{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .about-company-desc{
+            margin-left: 20px;
+            h2{
+                font-family: 'Poppins', sans-serif;
+                padding-bottom: 20px;
+            }
+            p{
+                font-size: 18px;
+                color: rgba(#000000, 0.6);
+                line-height: 1.6;
+            }
+            ul{
+                padding: 7px;
+                li{
+                    display: flex;
+                    i{
+                        color: $mainColor;
+                        margin-right: 10px;
+                        font-size: 18px;
+                    }
+                    p{
+                        font-size: 18px;
+                        color: rgba(#000000, 0.6);
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width: 767px) {
+        .about-company-desc{
+            margin-left: 0 !important;
+            margin-top: 20px;
+        }    
+    }
+}
+/* End About Company */
+
+/* Start Our Team Section */
+.our-team{
+    margin: 40px 0;
+    .member-container{
+        .img-container{
+            padding: 15px;
+        }
+        .member-desc{
+            h3{
+                margin-bottom: 20px;
+                font-weight: 400;
+                font-family: 'Poppins', sans-serif;
+            }
+            p{
+                font-size: 17px;
+                line-height: 1.6;
+                color: rgba( #000000, 0.6)
+            }
+        }
+        .icon-container{
+            ul{
+                display: flex;
+                flex-direction: row;
+                li{
+                    padding: 13px;
+                    a{
+                        color: rgba($mainColor, 0.9);
+                            &:hover{
+                                color: rgba($mainColor, 1.0)
+                            }
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Our Team Section */
