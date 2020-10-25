@@ -141,7 +141,9 @@
                 }
             }
             .btn-icon{
-                top: 30%
+                top: 30%;
+                left: 0;
+                right: 0;
             }
             .carousel-inner{
                 height: 750px;
@@ -178,5 +180,10 @@
                 }
             }
         }
+    }
+}
+@media (max-width: 767px){
+    .header{
+        height: 750px;
     }
 }

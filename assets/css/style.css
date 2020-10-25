@@ -209,6 +209,8 @@ a {
   }
   .header .wrapper .btn-icon {
     top: 30%;
+    left: 0;
+    right: 0;
   }
   .header .wrapper .carousel-inner {
     height: 750px;
@@ -240,6 +242,11 @@ a {
   }
 }
 
+@media (max-width: 767px) {
+  .header {
+    height: 750px;
+  }
+}
 /* Start Product Section */
 .products-sec {
   margin-bottom: 30px;
