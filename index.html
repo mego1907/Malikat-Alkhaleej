@@ -16,7 +16,7 @@
     <header class="header">
         
             <!-- Navbar -->
-            <nav class="navbar navbar-expand-md">
+            <nav class="navbar navbar-expand-md fixed-top">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">MK</a>
                     <div class="navbar-toggler" data-toggle="collapse" data-target="#navbar-items">
@@ -41,6 +41,9 @@
                                 <a class="nav-link" href="index.html">
                                     <i class="fas fa-shopping-cart"></i>
                                 </a>
+                                <span class="number">
+                                    0
+                                </span>
                             </li>
                         </ul>
                     </div>
@@ -63,11 +66,11 @@
                         <img src="assets/img/bg-2.jpg" alt="">
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <a class="btn-icon prev" href="#carousel" role="button" data-slide="prev">
+                    <i class="fas fa-chevron-left"></i>
                 </a>
-                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <a class="btn-icon next" href="#carousel" role="button" data-slide="next">
+                    <i class="fas fa-chevron-right"></i>
                 </a>
             </div>
         </div>
@@ -92,11 +95,13 @@
                             <img src="assets/img/IMG-20201023-WA0004.jpg" alt="">
                         </div>
                         <div class="cart-bottom">
-                            <h5 class="product-name">Prime Hair Care Supreme Keratin Oil </h5>
-                            <span class="sale">SALE!</span>
-                            <div class="price">
-                                <p class="new-price">60.00 <span class="currency">Egp</span></p>
-                                <p class="old-price">90.00 <span class="currency">Egp</span></p>
+                            <h5 class="product-name">Prime Hair Care Supreme Keratin Oil</h5>
+                            <div class="price-container">
+                                <span class="sale">SALE!</span>
+                                <div class="price">
+                                    <p class="new-price">60.00 <span class="currency">Egp</span></p>
+                                    <p class="old-price">90.00 <span class="currency">Egp</span></p>
+                                </div>
                             </div>
                             <button type="button">Add To Cart <i class="fa fa-cart-plus"></i></button>
                         </div>
@@ -111,10 +116,12 @@
                         </div>
                         <div class="cart-bottom">
                             <h5 class="product-name">Prime Hair Care FixColor Mask</h5>
-                            <span class="sale">SALE!</span>
-                            <div class="price">
-                                <p class="new-price">39.00 <span class="currency">Egp</span></p>
-                                <p class="old-price">50.00 <span class="currency">Egp</span></p>
+                            <div class="price-container">
+                                <span class="sale">SALE!</span>
+                                <div class="price">
+                                    <p class="new-price">39.00 <span class="currency">Egp</span></p>
+                                    <p class="old-price">50.00 <span class="currency">Egp</span></p>
+                                </div>
                             </div>
                             <button type="button">Add To Cart <i class="fa fa-cart-plus"></i></button>
                         </div>
@@ -129,10 +136,12 @@
                         </div>
                         <div class="cart-bottom">
                             <h5 class="product-name">Dance colorcream stain remover</h5>
-                            <span class="sale">SALE!</span>
-                            <div class="price">
-                                <p class="new-price">10.00 <span class="currency">Egp</span></p>
-                                <p class="old-price">25.00 <span class="currency">Egp</span></p>
+                            <div class="price-container">
+                                <span class="sale">SALE!</span>
+                                <div class="price">
+                                    <p class="new-price">10.00 <span class="currency">Egp</span></p>
+                                    <p class="old-price">25.00 <span class="currency">Egp</span></p>
+                                </div>
                             </div>
                             <button type="button">Add To Cart <i class="fa fa-cart-plus"></i></button>
                         </div>
@@ -147,10 +156,12 @@
                         </div>
                         <div class="cart-bottom">
                             <h5 class="product-name">Prime Hair Care Liss Idra serum </h5>
-                            <span class="sale">SALE!</span>
-                            <div class="price">
-                                <p class="new-price">125.00 <span class="currency">Egp</span></p>
-                                <p class="old-price">150.00 <span class="currency">Egp</span></p>
+                            <div class="price-container">
+                                <span class="sale">SALE!</span>
+                                <div class="price">
+                                    <p class="new-price">125.00 <span class="currency">Egp</span></p>
+                                    <p class="old-price">150.00 <span class="currency">Egp</span></p>
+                                </div>
                             </div>
                             <button type="button">Add To Cart <i class="fa fa-cart-plus"></i></button>
                         </div>
@@ -165,10 +176,12 @@
                         </div>
                         <div class="cart-bottom">
                             <h5 class="product-name">Prime Hair Care Argan Oil Serum</h5>
-                            <span class="sale">SALE!</span>
-                            <div class="price">
-                                <p class="new-price">90.00 <span class="currency">Egp</span></p>
-                                <p class="old-price">100.00 <span class="currency">Egp</span></p>
+                            <div class="price-container">
+                                <span class="sale">SALE!</span>
+                                <div class="price">
+                                    <p class="new-price">90.00 <span class="currency">Egp</span></p>
+                                    <p class="old-price">100.00 <span class="currency">Egp</span></p>
+                                </div>
                             </div>
                             <button type="button">Add To Cart <i class="fa fa-cart-plus"></i></button>
                         </div>
@@ -183,10 +196,12 @@
                         </div>
                         <div class="cart-bottom">
                             <h5 class="product-name">Dance color Cera Opaca Strong</h5>
-                            <span class="sale">SALE!</span>
-                            <div class="price">
-                                <p class="new-price">77.00 <span class="currency">Egp</span></p>
-                                <p class="old-price">90.00 <span class="currency">Egp</span></p>
+                            <div class="price-container">
+                                <span class="sale">SALE!</span>
+                                <div class="price">
+                                    <p class="new-price">77.00 <span class="currency">Egp</span></p>
+                                    <p class="old-price">90.00 <span class="currency">Egp</span></p>
+                                </div>
                             </div>
                             <button type="button">Add To Cart <i class="fa fa-cart-plus"></i></button>
                         </div>
