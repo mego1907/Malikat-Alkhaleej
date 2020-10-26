@@ -167,6 +167,32 @@
             }
         }
     }
+    .shopping{
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        background-color: $primaryColor;
+        border-radius: 50%;
+        right: 10px;
+        bottom: 10px;
+        z-index: 99999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        .icon{
+            color: #fff;
+        }
+        &:hover{
+            background-color: $mainColor;
+        }
+        @media (max-width: 767px) {
+            display: flex;
+        }
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
 }
 @media (max-width: 767px){
     .header{
