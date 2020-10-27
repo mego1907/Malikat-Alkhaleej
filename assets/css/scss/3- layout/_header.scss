@@ -57,8 +57,11 @@
             }
         }
         @media(min-width: 768px) {
-            .collapse{
-                padding: 20px 0;
+            .navbar{
+                padding: 0;
+                .collapse{
+                    padding: 20px 0;
+                }
             }
         }
         @media(min-width: 991px) {
