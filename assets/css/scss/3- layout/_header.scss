@@ -6,7 +6,6 @@
     .navbar{
         z-index: 88;
         background-color: #fff;
-        box-shadow: 0 0 5px;
         .navbar-brand{
             font-family: 'Montserrat', sans-serif;
             font-size: 30px;
@@ -192,10 +191,5 @@
         @media (min-width: 768px) {
             display: none;
         }
-    }
-}
-@media (max-width: 767px){
-    .header{
-        height: 750px;
     }
 }
