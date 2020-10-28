@@ -344,7 +344,7 @@ a {
 
 /* Start Products Page */
 .header .products-header {
-  margin-top: 75px;
+  margin-top: 70px;
   height: 500px;
   background-image: url("../img/products bg.jpg");
   background-size: cover;
@@ -592,7 +592,123 @@ a {
   text-align: center;
   color: #fff;
   font-size: 4rem;
-  line-height: 300px;
+  line-height: 250px;
+}
+
+@media (max-width: 767px) {
+  .header {
+    margin-bottom: 20px;
+  }
+  .header .contact-header {
+    height: 200px;
+  }
+  .header .contact-header .col-md-8 .heading {
+    font-size: 2.5rem;
+    line-height: 200px;
+  }
+}
+.contact-us .touch-us h3 {
+  font-family: 'Poppins',sans-serif;
+  text-align: center;
+}
+.contact-us .touch-us .contact-items {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 40px;
+}
+.contact-us .touch-us .contact-items .contact-item {
+  padding: 20px;
+}
+.contact-us .touch-us .contact-items .contact-item i {
+  font-size: 55px;
+  color: #00b9f1;
+}
+.contact-us .touch-us .contact-items .contact-item h4 {
+  padding: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+}
+.contact-us .touch-us .contact-items .contact-item p {
+  margin-bottom: 0;
+  color: #616060;
+}
+.contact-us .touch-us .contact-items .contact-item:nth-of-type(2) {
+  border-left: 1px solid #00b9f1;
+  border-right: 1px solid #00b9f1;
+}
+@media (max-width: 767px) {
+  .contact-us .touch-us .contact-items {
+    margin: 0;
+    flex-direction: column;
+  }
+  .contact-us .touch-us .contact-items .contact-item {
+    padding: 20px 0;
+  }
+  .contact-us .touch-us .contact-items .contact-item:nth-of-type(2) {
+    border: none;
+    border-top: 1px solid #00b9f1;
+    border-bottom: 1px solid #00b9f1;
+  }
+}
+.contact-us .message-section {
+  padding: 50px 0;
+}
+.contact-us .message-section h3 {
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: 'Poppins',sans-serif;
+  margin-bottom: 20px;
+}
+.contact-us .message-section .col-md-8 form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-us .message-section .col-md-8 form input {
+  padding: 8px;
+  outline: none;
+  margin-bottom: 15px;
+  border: 1px solid #333;
+}
+.contact-us .message-section .col-md-8 form input:focus {
+  border: 1px solid #fe4365;
+}
+.contact-us .message-section .col-md-8 form textarea {
+  padding: 8px 5px;
+  outline: none;
+  margin-bottom: 15px;
+  height: 150px;
+  border: 1px solid #333;
+}
+.contact-us .message-section .col-md-8 form textarea:focus {
+  border: 1px solid #fe4365;
+}
+.contact-us .message-section .col-md-8 button {
+  border: none;
+  outline: none;
+  text-align: center;
+  padding: 8px 15px;
+  color: #fff;
+  background-color: #00b9f1;
+  display: flex;
+  margin: auto;
+}
+.contact-us .message-section .col-md-8 button:hover {
+  background-color: transparent;
+  color: #fe4365;
+  border: 1px solid #fe4365;
+}
+@media (max-width: 767px) {
+  .contact-us .message-section {
+    padding: 20px 0;
+  }
+  .contact-us .message-section h3 {
+    font-size: 20px;
+  }
+}
+.contact-us .map iframe {
+  width: 100%;
 }
 
 /* Start Footer section */

@@ -18,8 +18,135 @@
                 text-align: center;
                 color: #fff;
                 font-size: 4rem;
-                line-height: 300px;
+                line-height: 250px;
             }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .header{
+        margin-bottom: 20px;
+        .contact-header{
+            height: 200px;
+            .col-md-8{
+                .heading{
+                    font-size: 2.5rem;
+                    line-height: 200px;
+                }
+            }
+        }
+    }
+}
+
+
+.contact-us{
+    .touch-us{
+        h3{
+            font-family: 'Poppins',sans-serif;
+            text-align: center;
+        }
+        .contact-items{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: 40px;
+            .contact-item{
+                padding: 20px;
+                i{
+                    font-size: 55px;
+                    color: $mainColor;
+                }
+                h4{
+                    padding: 15px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 22px;
+                }
+                p{
+                    margin-bottom: 0;
+                    color: #616060;
+                }
+            }
+            .contact-item:nth-of-type(2){
+                border-left: 1px solid $mainColor;
+                border-right: 1px solid $mainColor;
+            }
+        }
+        @media (max-width: 767px) {
+            .contact-items{
+                margin: 0;
+                flex-direction: column;
+                .contact-item{
+                    padding: 20px 0;
+                }
+                .contact-item:nth-of-type(2){
+                    border: none;
+                    border-top: 1px solid $mainColor;
+                    border-bottom: 1px solid $mainColor;
+                }
+            }
+        }
+    }
+    .message-section{
+        padding: 50px 0;
+        h3{
+            text-align: center;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-family: 'Poppins',sans-serif;
+            margin-bottom: 20px;
+        }
+        .col-md-8{
+            form{
+                display: flex;
+                flex-direction: column;
+                input{
+                    padding: 8px;
+                    outline: none;
+                    margin-bottom: 15px;
+                    border: 1px solid #333;
+                    &:focus{
+                        border: 1px solid $primaryColor;
+                    }
+                }
+                textarea{
+                    padding: 8px 5px;
+                    outline: none;
+                    margin-bottom: 15px;
+                    height: 150px;
+                    border: 1px solid #333;
+                    &:focus{
+                        border: 1px solid $primaryColor;
+                    }
+                }
+            }
+            button{
+                border: none;
+                outline: none;
+                text-align: center;
+                padding: 8px 15px;
+                color: #fff;
+                background-color: $mainColor;
+                display: flex;
+                margin: auto;
+                &:hover{
+                    background-color: transparent;
+                    color: $primaryColor;
+                    border: 1px solid $primaryColor;
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .message-section{
+            padding: 20px 0;
+            h3{
+                font-size: 20px;
+            }
+        }
+    }
+    .map{
+        iframe{
+            width:100%;
         }
     }
 }
