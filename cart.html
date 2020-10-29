@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="assets/css/fontawesome.all.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md fixed-top shadow">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">MK</a>
+                <div class="navbar-toggler" data-toggle="collapse" data-target="#navbar-items">
+                    <i class="fa fa-bars"></i>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-items">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                            <span class="number">
+                                0
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- cart -->
+    <div class="cart-shopping">
+        <div class="container">
+            <h2 class="text-center">Your Cart</h2>
+            <div class="cart-inner">
+                <div class="row">
+                    <div class="col-md-9">
+
+                        <!-- Cart Head -->
+                        <div class="cart-head">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h6>Product</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <h6>Price</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <h6>Quantity</h6>
+                                </div>
+                                <div class="col-md-2">
+                                    <h6>total</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cart body -->
+                        <div class="cart-body">
+                            <!-- product -->
+                            <div class="product">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="assets/img/Products/mask/Prime Hair Care IDRA Mask.jpg" alt="">
+                                        <h6>Prime Hair Care IDRA Mask</h6>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>30 EGP</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="button">+</button>
+                                        <input type="text" name="" value="1">
+                                        <button type="button">-</button>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>30 EGP</p>
+                                    </div>
+                                    <div class="close">
+                                        <span>&times;</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- product -->
+                            <div class="product">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="assets/img/Products/mask/Prime Hair Care Liss Mask.jpg" alt="">
+                                        <h6>Prime Hair Care Liss Mask</h6>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>50 EGP</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="button">+</button>
+                                        <input type="text" name="" value="2">
+                                        <button type="button">-</button>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>100 EGP</p>
+                                    </div>
+                                    <div class="close">
+                                        <span>&times;</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3">
+                        <div class="order-summary">
+                            <div class="order-head">
+                                <h4>Order Summary</h4>
+                            </div>
+                            <div class="order-body">
+                                <div class="subtotal">
+                                    <p>Subtotal</p>
+                                    <p>130 EGP</p>
+                                </div>
+                                <div class="shipping">
+                                    <p>shipping</p>
+                                    <p>Free</p>
+                                </div>
+                                <h6>Add Coupon Code <i class="fa fa-arrow-right"></i></h6>
+                            </div>
+                            <div class="order-footer">
+                                <div class="total-footer">
+                                    <p>Total</p>
+                                    <p>130 EGP</p>
+                                </div>
+                            </div>
+                            <button type="button">Check Out</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Js -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

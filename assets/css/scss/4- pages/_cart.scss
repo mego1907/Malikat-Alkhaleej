@@ -1,0 +1,137 @@
+.cart-shopping{
+    position: relative;
+    top: 100px;
+    h2{
+        font-size: 50px;
+        font-family: 'Poppins', 'Roboto';
+    }
+    .cart-inner{
+        .cart-head{
+            padding: 50px 0 0;
+            border-bottom: 1px solid #ccc;
+            .col-md-6{
+                h6{
+                    font-size: 23px;
+                    color: rgba(#000, 0.6);
+                }
+            }
+            .col-md-2{
+                h6{
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    color: rgba(#000, 0.6);
+                }
+            }
+        }
+        .cart-body{
+            margin-top: 20px;
+            .product{
+                position: relative;
+                .col-md-6{
+                    img{
+                        width: 90px;
+                    }
+                    h6{
+                        display: inline-block;
+                    }
+                }
+                .col-md-2{
+                    margin: 20px 0;
+                    p{
+                        font-weight: bold;
+                        font-size: 18px;
+                    }
+                    button{
+                        padding: 0 8px;
+                        background-color: #ccc;
+                        font-size: 16px;
+                        outline: none;
+                        border: 1px solid #000;
+                        width: 25px;
+                        height: 25px;
+                    
+                    }
+                    input{
+                        width: 35px;
+                        outline: none;
+                        border: 1px solid #000;
+                        text-align: center;
+                    }
+                }
+                .close{
+                    position: absolute;
+                    right: -10px;
+                    top: 20px;
+                    border: 1px solid rgba(#000, 0.8);
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    text-align: center;
+                    cursor: pointer;
+                    &:hover{
+                        border: 1px solid $primaryColor;
+                        span{
+                            color: $primaryColor
+                        }
+                    }
+                    span{
+                        line-height: 27px;
+                    }
+                }
+            }
+        }
+        .order-summary{
+            margin: 83px 5px;
+            .order-head{
+                padding: 15px 12px;
+                background-color: #dddddde6;
+                border-bottom: 1px solid rgba(#000, 0.3);
+                h4{
+                    font-size: 20px;
+                    margin: 0;
+                }
+            }
+            .order-body{
+                padding: 15px 12px;
+                background-color: #eae8e8ee;
+                .subtotal{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .shipping{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                h6{
+                    color: $mainColor;
+                    cursor: pointer;
+                }
+            }
+            .order-footer{
+                padding: 15px 12px;
+                background-color: #dddddde6;
+                border-top: 1px solid rgba(#000, 0.3);
+                .total-footer{
+                    display: flex;
+                    justify-content: space-between;
+                    p{
+                        margin: 0;
+                    }
+                }
+            }
+            button{
+                outline: none;
+                width: 100%;
+                margin-top: 8px;
+                padding: 10px;
+                border: none;
+                background-color: $primaryColor;
+                color: #fff;
+                transition: background-color 0.3s ease-in-out;
+                &:hover{
+                    background-color: #46fe43;
+                }
+            }
+        }
+    }
+}
