@@ -463,6 +463,9 @@ a {
   }
 }
 @media (min-width: 768px) {
+  .cart-shopping .cart-inner .cart-body .product .title {
+    display: inline-block;
+  }
   .cart-shopping .cart-inner .cart-body .product .title h5 {
     display: none;
   }

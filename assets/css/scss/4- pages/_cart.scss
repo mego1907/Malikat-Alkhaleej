@@ -120,6 +120,7 @@
             @media (min-width: 768px) {
                 .product{
                     .title{
+                        display: inline-block;
                         h5{
                             display: none;
                         }
