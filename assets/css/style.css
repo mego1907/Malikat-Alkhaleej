@@ -112,8 +112,12 @@ a {
   text-decoration: none;
   padding: 8px 13px;
   border-radius: 4px;
-  background-color: #00b9f1;
-  color: #fff;
+  background-color: transparent;
+  color: #00b9f1;
+  font-weight: bold;
+}
+.header .navbar .sign-btn:hover {
+  color: #fe4365;
 }
 .header .navbar .shopping-btn {
   position: relative;
@@ -149,7 +153,7 @@ a {
   }
   .header .navbar .collapse .sign-btn {
     display: inline-block;
-    margin: 15px 0;
+    margin: 0 0 10px 0;
   }
 }
 @media (min-width: 768px) {

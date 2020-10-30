@@ -43,8 +43,12 @@
             text-decoration: none;
             padding: 8px 13px;
             border-radius: 4px;
-            background-color: $mainColor;
-            color: #fff;
+            background-color: transparent;
+            color: $mainColor;
+            font-weight: bold;
+            &:hover{
+                color: $primaryColor;
+            }
         }
         .shopping-btn{
             position: relative;
@@ -80,7 +84,7 @@
                 }
                 .sign-btn{
                     display: inline-block;
-                    margin: 15px 0;
+                    margin: 0 0 10px 0;
                 }
             }
         }
