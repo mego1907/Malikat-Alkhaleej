@@ -147,6 +147,10 @@ a {
     right: 0;
     left: 27px;
   }
+  .header .navbar .collapse .sign-btn {
+    display: inline-block;
+    margin: 15px 0;
+  }
 }
 @media (min-width: 768px) {
   .header .navbar .navbar {
@@ -451,6 +455,15 @@ a {
   color: #00b9f1;
   font-size: 16px;
   cursor: pointer;
+}
+@media (max-width: 767px) {
+  .sign {
+    margin-top: 80px;
+  }
+  .sign .signin .signin-container h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
 }
 
 .cart-shopping {
