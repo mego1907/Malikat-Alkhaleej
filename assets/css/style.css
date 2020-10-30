@@ -377,37 +377,6 @@ a {
   align-items: center;
   padding: 10px;
 }
-.sign .signup {
-  display: none;
-}
-.sign .signup .signup-container h2 {
-  text-align: center;
-  margin-bottom: 50px;
-  font-size: 50px;
-}
-.sign .signup .signup-container label {
-  font-weight: bold;
-}
-.sign .signup .signup-container .col-md-6 input {
-  width: 100%;
-  outline: none;
-  padding: 8px;
-  border: 1px solid #333;
-}
-.sign .signup .signup-container .col-md-6 input:focus {
-  border: 1px solid #fe4365;
-}
-.sign .signup .signup-container .col-md-12 {
-  margin: 10px;
-}
-.sign .signup .signup-container .signup-btn {
-  margin-top: 20px;
-  outline: none;
-  padding: 10px 25px;
-  border: none;
-  background-color: #fe4365;
-  color: #fff;
-}
 .sign .signin .signin-container h2 {
   text-align: center;
   margin-bottom: 50px;
@@ -415,16 +384,17 @@ a {
 }
 .sign .signin .signin-container label {
   font-weight: bold;
+  cursor: pointer;
 }
-.sign .signin .signin-container .col-sm-12 {
+.sign .signin .signin-container .col-md-12 {
   margin-bottom: 15px;
 }
-.sign .signin .signin-container .col-sm-12 input {
+.sign .signin .signin-container .col-md-12 input {
   width: 100%;
   outline: none;
   padding: 8px;
 }
-.sign .signin .signin-container .col-sm-12 input:focus {
+.sign .signin .signin-container .col-md-12 input:focus {
   border: 1px solid #fe4365;
 }
 .sign .signin .signin-container .signin-btn {
@@ -456,25 +426,60 @@ a {
   font-size: 16px;
   cursor: pointer;
 }
+.sign .signup {
+  display: none;
+}
+.sign .signup .signup-container h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+.sign .signup .signup-container label {
+  font-weight: bold;
+  cursor: pointer;
+}
+.sign .signup .signup-container .col-md-6 {
+  margin-bottom: 15px;
+}
+.sign .signup .signup-container .col-md-6 input {
+  width: 100%;
+  outline: none;
+  padding: 8px;
+  border: 1px solid #333;
+}
+.sign .signup .signup-container .col-md-6 input:focus {
+  border: 1px solid #fe4365;
+}
+.sign .signup .signup-container .col-md-12 {
+  margin-bottom: 10px;
+}
+.sign .signup .signup-container .col-md-12 a {
+  font-size: 15px;
+}
+.sign .signup .signup-container .signup-btn {
+  margin-top: 20px;
+  outline: none;
+  padding: 10px 25px;
+  border: none;
+  background-color: #fe4365;
+  color: #fff;
+}
 @media (max-width: 767px) {
   .sign {
     margin-top: 105px;
-  }
-  .sign .signin {
-    overflow: hidden;
-  }
-  .sign .signin .signin-container h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
   }
   .sign .signup {
     overflow: hidden;
     margin-bottom: 10px;
   }
-  .sign .signup .signup-container .col-md-12 {
-    margin: 0;
-  }
   .sign .signup .signup-container h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .sign .signin {
+    overflow: hidden;
+  }
+  .sign .signin .signin-container h2 {
     font-size: 40px;
     margin-bottom: 20px;
   }

@@ -1,11 +1,13 @@
 document.addEventListener("DOMContentLoaded", ()=> {
-    document.querySelector('.signin .create-acc').addEventListener('click',function(){
+    document.getElementById('create-acc').addEventListener('click',function(){
+
         document.querySelector('.sign .signin').style.display = 'none';
         document.querySelector('.sign .signup').style.display = 'block';
-        })
 
+    });
+});
 
-
+document.addEventListener("DOMContentLoaded", ()=> {
     // cart
     const productLists = document.querySelectorAll('.shop .products-list ul li');
     const catorgy = document.querySelectorAll('.shop .products-items .catorgy');
@@ -23,4 +25,4 @@ document.addEventListener("DOMContentLoaded", ()=> {
             
         })
     }
-})
+});
