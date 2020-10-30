@@ -458,9 +458,23 @@ a {
 }
 @media (max-width: 767px) {
   .sign {
-    margin-top: 80px;
+    margin-top: 105px;
+  }
+  .sign .signin {
+    overflow: hidden;
   }
   .sign .signin .signin-container h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .sign .signup {
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .sign .signup .signup-container .col-md-12 {
+    margin: 0;
+  }
+  .sign .signup .signup-container h2 {
     font-size: 40px;
     margin-bottom: 20px;
   }
