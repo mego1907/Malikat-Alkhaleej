@@ -11,6 +11,7 @@
             font-size: 30px;
             font-weight: 400;
             color: $primaryColor;
+            user-select: none;
         }
         .navbar-toggler{
             border: none;
@@ -25,6 +26,7 @@
             .nav-link{
                 color: #636363;
                 font-size: 16px;
+                user-select: none;
                 &:hover{
                     color: $primaryColor;
                 }
@@ -64,6 +66,7 @@
                 position: absolute;
                 top: 17px;
                 left: 13px;
+                user-select: none;
             }
         }
         @media(max-width: 767px) {

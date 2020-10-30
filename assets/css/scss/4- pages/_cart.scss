@@ -92,10 +92,8 @@
                         color: $primaryColor
                     }
                 }
-            }
-            @media (max-width: 767px){
-                margin-top: 30px;
-                .product{
+                @media (max-width: 767px){
+                    margin-top: 30px;
                     border-bottom: 1px solid #ccc;
                     margin-bottom: 13px;
                     img{
@@ -116,9 +114,7 @@
                         top: 0;
                     }
                 }
-            }
-            @media (min-width: 768px) {
-                .product{
+                @media (min-width: 768px) {
                     .title{
                         display: inline-block;
                         h5{
@@ -126,8 +122,18 @@
                         }
                     }
                     .col-md-2{
+                        .control-quntity{
+                            display: flex;
+                        }
                         h5{
                             display: none;
+                        }
+                    }
+                }
+                @media (min-width: 1200px) {
+                    .col-md-2{
+                        .control-quntity{
+                            display: block;
                         }
                     }
                 }

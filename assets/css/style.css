@@ -81,6 +81,7 @@ a {
   font-size: 30px;
   font-weight: 400;
   color: #fe4365;
+  user-select: none;
 }
 .header .navbar .navbar-toggler {
   border: none;
@@ -96,6 +97,7 @@ a {
 .header .navbar .nav-item .nav-link {
   color: #636363;
   font-size: 16px;
+  user-select: none;
 }
 .header .navbar .nav-item .nav-link:hover {
   color: #fe4365;
@@ -135,6 +137,7 @@ a {
   position: absolute;
   top: 17px;
   left: 13px;
+  user-select: none;
 }
 @media (max-width: 767px) {
   .header .navbar .collapse {
@@ -378,10 +381,17 @@ a {
   margin-bottom: 50px;
   font-size: 50px;
 }
+.sign .signup .signup-container label {
+  font-weight: bold;
+}
 .sign .signup .signup-container .col-md-6 input {
   width: 100%;
   outline: none;
-  padding: 6px;
+  padding: 8px;
+  border: 1px solid #333;
+}
+.sign .signup .signup-container .col-md-6 input:focus {
+  border: 1px solid #fe4365;
 }
 .sign .signup .signup-container .col-md-12 {
   margin: 10px;
@@ -399,13 +409,19 @@ a {
   margin-bottom: 50px;
   font-size: 50px;
 }
+.sign .signin .signin-container label {
+  font-weight: bold;
+}
 .sign .signin .signin-container .col-sm-12 {
   margin-bottom: 15px;
 }
 .sign .signin .signin-container .col-sm-12 input {
   width: 100%;
   outline: none;
-  padding: 4px 6px;
+  padding: 8px;
+}
+.sign .signin .signin-container .col-sm-12 input:focus {
+  border: 1px solid #fe4365;
 }
 .sign .signin .signin-container .signin-btn {
   margin: 20px 15px;
@@ -428,12 +444,13 @@ a {
   text-align: center;
   border-top: 1px solid #3333333b;
   padding: 24px;
-  margin: 15px;
+  margin: 15px 0;
 }
-.sign .signin .signin-container .create-acc a {
+.sign .signin .signin-container .create-acc p {
   text-decoration: none;
   color: #00b9f1;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .cart-shopping {
@@ -531,10 +548,8 @@ a {
   color: #fe4365;
 }
 @media (max-width: 767px) {
-  .cart-shopping .cart-inner .cart-body {
-    margin-top: 30px;
-  }
   .cart-shopping .cart-inner .cart-body .product {
+    margin-top: 30px;
     border-bottom: 1px solid #ccc;
     margin-bottom: 13px;
   }
@@ -563,8 +578,16 @@ a {
   .cart-shopping .cart-inner .cart-body .product .title h5 {
     display: none;
   }
+  .cart-shopping .cart-inner .cart-body .product .col-md-2 .control-quntity {
+    display: flex;
+  }
   .cart-shopping .cart-inner .cart-body .product .col-md-2 h5 {
     display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .cart-shopping .cart-inner .cart-body .product .col-md-2 .control-quntity {
+    display: block;
   }
 }
 .cart-shopping .cart-inner .order-summary {

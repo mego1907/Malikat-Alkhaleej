@@ -19,11 +19,18 @@
                 margin-bottom: 50px;
                 font-size: 50px;
             }
+            label{
+                font-weight: bold;
+            }
             .col-md-6{
                 input{
                     width: 100%;
                     outline: none;
-                    padding: 6px;
+                    padding: 8px;
+                    border: 1px solid #333;
+                    &:focus{
+                        border: 1px solid $primaryColor;
+                    }
                 }
             }
             .col-md-12{
@@ -46,12 +53,18 @@
                 margin-bottom: 50px;
                 font-size: 50px;
             }
+            label{
+                font-weight: bold;
+            }
             .col-sm-12{
                 margin-bottom: 15px;
                 input{
                     width: 100%;
                     outline: none;
-                    padding: 4px 6px;
+                    padding: 8px;
+                    &:focus{
+                        border: 1px solid $primaryColor;
+                    }
                 }
             }
             .signin-btn{
@@ -75,11 +88,12 @@
                 text-align: center;
                 border-top: 1px solid #3333333b;
                 padding: 24px;
-                margin: 15px;
-                a{
+                margin: 15px 0;
+                p{
                     text-decoration: none;
                     color: $mainColor;
                     font-size: 16px;
+                    cursor: pointer;
                 }
             }
         }
