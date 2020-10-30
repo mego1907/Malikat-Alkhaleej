@@ -238,10 +238,10 @@ a {
     padding: 15px 30px;
   }
   .header .wrapper .carousel-item img {
-    width: 750px;
+    width: 900px;
   }
   .header .wrapper .carousel-inner {
-    height: 500px;
+    height: 600px;
   }
 }
 @media (min-width: 768px) {
