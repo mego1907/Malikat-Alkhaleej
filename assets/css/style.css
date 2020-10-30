@@ -103,7 +103,27 @@ a {
 .header .navbar .nav-item .active {
   color: #fe4365;
 }
-.header .navbar .nav-item .number {
+.header .navbar .sign-btn {
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  padding: 8px 13px;
+  border-radius: 4px;
+  background-color: #00b9f1;
+  color: #fff;
+}
+.header .navbar .shopping-btn {
+  position: relative;
+  margin-left: 10px;
+}
+.header .navbar .shopping-btn .sh-btn {
+  color: #636363;
+}
+.header .navbar .shopping-btn .sh-btn:hover {
+  color: #fe4365;
+}
+.header .navbar .shopping-btn .number {
   color: #fff;
   background-color: rgba(254, 67, 101, 0.8);
   font-size: 13px;
@@ -113,8 +133,8 @@ a {
   line-height: 20px;
   text-align: center;
   position: absolute;
-  top: 22px;
-  right: 3px;
+  top: 17px;
+  left: 13px;
 }
 @media (max-width: 767px) {
   .header .navbar .collapse {
@@ -340,6 +360,80 @@ a {
 .products-sec .container .hero-btn:hover, .shop .products-items .container .hero-btn:hover {
   color: #fe4365;
   border: 1px solid #fe4365;
+}
+
+/* Start Sign up */
+.sign {
+  height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.sign .signup {
+  display: none;
+}
+.sign .signup .signup-container h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+.sign .signup .signup-container .col-md-6 input {
+  width: 100%;
+  outline: none;
+  padding: 6px;
+}
+.sign .signup .signup-container .col-md-12 {
+  margin: 10px;
+}
+.sign .signup .signup-container .signup-btn {
+  margin-top: 20px;
+  outline: none;
+  padding: 10px 25px;
+  border: none;
+  background-color: #fe4365;
+  color: #fff;
+}
+.sign .signin .signin-container h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+.sign .signin .signin-container .col-sm-12 {
+  margin-bottom: 15px;
+}
+.sign .signin .signin-container .col-sm-12 input {
+  width: 100%;
+  outline: none;
+  padding: 4px 6px;
+}
+.sign .signin .signin-container .signin-btn {
+  margin: 20px 15px;
+  width: 100%;
+  outline: none;
+  padding: 10px 25px;
+  border: none;
+  background-color: #fe4365;
+  color: #fff;
+}
+.sign .signin .signin-container .remember-me {
+  display: flex;
+}
+.sign .signin .signin-container .remember-me label {
+  font-size: 16px;
+  margin-top: -4px;
+  margin-left: 6px;
+}
+.sign .signin .signin-container .create-acc {
+  text-align: center;
+  border-top: 1px solid #3333333b;
+  padding: 24px;
+  margin: 15px;
+}
+.sign .signin .signin-container .create-acc a {
+  text-decoration: none;
+  color: #00b9f1;
+  font-size: 16px;
 }
 
 .cart-shopping {

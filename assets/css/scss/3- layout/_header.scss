@@ -32,6 +32,27 @@
             .active{
                 color: $primaryColor;
             }
+            
+        }
+        .sign-btn{
+            margin-right: 10px;
+            border: none;
+            outline: none;
+            text-decoration: none;
+            padding: 8px 13px;
+            border-radius: 4px;
+            background-color: $mainColor;
+            color: #fff;
+        }
+        .shopping-btn{
+            position: relative;
+            margin-left: 10px;
+            .sh-btn{
+                color: #636363;
+                &:hover{
+                    color: $primaryColor;
+                }
+            }
             .number{
                 color: #fff;
                 background-color: rgba($primaryColor, 0.8);
@@ -41,8 +62,8 @@
                 line-height: 20px;
                 text-align: center;
                 position: absolute;
-                top: 22px;
-                right: 3px;
+                top: 17px;
+                left: 13px;
             }
         }
         @media(max-width: 767px) {

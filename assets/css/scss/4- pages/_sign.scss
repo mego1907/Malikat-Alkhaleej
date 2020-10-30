@@ -1,0 +1,88 @@
+
+
+
+
+
+
+/* Start Sign up */
+.sign{
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    .signup{
+        display: none;
+        .signup-container{
+            h2{
+                text-align: center;
+                margin-bottom: 50px;
+                font-size: 50px;
+            }
+            .col-md-6{
+                input{
+                    width: 100%;
+                    outline: none;
+                    padding: 6px;
+                }
+            }
+            .col-md-12{
+                margin: 10px;
+            }
+            .signup-btn{
+                margin-top: 20px;
+                outline: none;
+                padding: 10px 25px;
+                border: none;
+                background-color: $primaryColor;
+                color: #fff;
+            }
+        }
+    }
+    .signin{
+        .signin-container{
+            h2{
+                text-align: center;
+                margin-bottom: 50px;
+                font-size: 50px;
+            }
+            .col-sm-12{
+                margin-bottom: 15px;
+                input{
+                    width: 100%;
+                    outline: none;
+                    padding: 4px 6px;
+                }
+            }
+            .signin-btn{
+                margin: 20px 15px;
+                width: 100%;
+                outline: none;
+                padding: 10px 25px;
+                border: none;
+                background-color: $primaryColor;
+                color: #fff;
+            }
+            .remember-me{
+                display: flex;
+                label{
+                    font-size: 16px;
+                    margin-top: -4px;
+                    margin-left: 6px;
+                }
+            }
+            .create-acc{
+                text-align: center;
+                border-top: 1px solid #3333333b;
+                padding: 24px;
+                margin: 15px;
+                a{
+                    text-decoration: none;
+                    color: $mainColor;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+}

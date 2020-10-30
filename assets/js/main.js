@@ -1,5 +1,12 @@
 document.addEventListener("DOMContentLoaded", ()=> {
-    // cat
+    document.querySelector('.signin .create-acc').addEventListener('click',function(){
+        document.querySelector('.sign .signin').style.display = 'none';
+        document.querySelector('.sign .signup').style.display = 'block';
+        })
+
+
+
+    // cart
     const productLists = document.querySelectorAll('.shop .products-list ul li');
     const catorgy = document.querySelectorAll('.shop .products-items .catorgy');
     
