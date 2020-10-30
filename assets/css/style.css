@@ -359,7 +359,6 @@ a {
   background: #fe4365;
   color: #fff;
   padding: 11px;
-  /* transform: translateY(50px); */
   position: absolute;
   left: 0;
   bottom: -46px;
@@ -372,8 +371,8 @@ a {
   margin: 20px auto;
 }
 .products-sec .container .hero-btn:hover, .shop .products-items .container .hero-btn:hover {
-  color: #fe4365;
-  border: 1px solid #fe4365;
+  color: #fff;
+  background-color: #fe4365;
 }
 
 /* Start Sign up */
