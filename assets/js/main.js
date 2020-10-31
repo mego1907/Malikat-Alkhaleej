@@ -30,6 +30,40 @@ for(let i = 0; i < productLists.length; i++) {
 }
 
 
+// Counter in About Page
+let counter = document.querySelectorAll('.user-banner .col-md-3 .counter p');
+const userBanner = document.getElementById('userBanner');
+console.log(document.documentElement.scrollTop)
+console.log(userBanner.offsetTop)
+
+document.addEventListener('scroll', function() {
+    if(document.documentElement.scrollTop >= document.querySelector('.user-banner').offsetTop - 200){
+        console.log('Hello')
+        setInterval(()=>{
+            if(counter[0].innerHTML < 150) {
+                counter[0].innerHTML++;
+            }
+            if(counter[1].innerHTML < 500) {
+                counter[1].innerHTML++;
+            }
+            if(counter[2].innerHTML < 300) {
+                counter[2].innerHTML++;
+            }
+            if(counter[3].innerHTML < 200) {
+                counter[3].innerHTML++;
+            }
+        }, 60)
+    } else{
+        counter[0].innerHTML = 0;
+        counter[1].innerHTML = 0;
+        counter[2].innerHTML = 0;
+        counter[3].innerHTML = 0;
+    }  
+})
+
+    
+
+
 /* Sign in Page */
 document.querySelector('#btnCreate').addEventListener('click',function(){
     document.querySelector('.sign .signin').style.display = 'none'; // hide signin section

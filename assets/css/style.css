@@ -19,7 +19,7 @@ a {
   text-decoration: none;
 }
 
-.header .wrapper .carousel .carousel-inner::after, .about-header::after, .header .contact-header::after {
+.header .wrapper .carousel .carousel-inner::after, .about-header::after, .user-banner::after, .header .contact-header::after {
   content: "";
   z-index: 1;
   position: absolute;
@@ -920,6 +920,15 @@ a {
   border-right: 5px solid #00b9f1;
   border-top: 5px solid #00b9f1;
 }
+@media (max-width: 767px) {
+  .about-header .heading {
+    font-size: 3rem;
+  }
+  .about-header .heading::before {
+    right: -14px;
+    top: -3px;
+  }
+}
 
 .about {
   margin-bottom: 40px;
@@ -936,6 +945,7 @@ a {
 .about .about-company .about-desc h3 {
   font-size: 34px;
   padding: 10px 0;
+  font-family: "poppins";
 }
 .about .about-company .about-desc p {
   font-size: 16px;
@@ -948,6 +958,14 @@ a {
   color: #fe4365;
   padding: 3px 6px 3px 5px;
   font-size: 18px;
+}
+@media (max-width: 767px) {
+  .about .about-company .about-desc {
+    padding-left: 10px;
+  }
+  .about .about-company .about-desc h3 {
+    font-size: 25px;
+  }
 }
 .about .banner-bottom {
   padding: 50px 0;
@@ -972,6 +990,85 @@ a {
 .about .banner-bottom .col-md-4 p {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.8);
+}
+.about .banner-bottom .col-md-4 p {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 767px) {
+  .about .banner-bottom {
+    padding: 0;
+  }
+}
+
+.user-banner {
+  margin: 50px 0;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/user-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  z-index: 2;
+}
+.user-banner::after {
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.user-banner .col-md-3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 7;
+}
+.user-banner .col-md-3 i {
+  font-size: 50px;
+  color: #fe4365;
+}
+.user-banner .col-md-3 .counter {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+.user-banner .col-md-3 .counter p {
+  font-size: 30px;
+  color: #00b9f1;
+  line-height: 50px;
+}
+.user-banner .col-md-3 h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fe4365;
+}
+@media (max-width: 767px) {
+  .user-banner {
+    height: 600px;
+  }
+  .user-banner .col-md-3 {
+    margin-bottom: 10px;
+  }
+  .user-banner .col-md-3 i {
+    font-size: 30px;
+  }
+}
+
+.choose-us {
+  margin: 30px 0;
+}
+.choose-us .choose-inner .choose-desc h3 {
+  font-size: 34px;
+  padding: 10px 0;
+  font-family: "poppins", sans-serif;
+}
+.choose-us .choose-inner .choose-desc p {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.choose-us .choose-inner .Choose-img img {
+  width: 100%;
 }
 
 .header .contact-header {
