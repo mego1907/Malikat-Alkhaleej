@@ -19,7 +19,7 @@ a {
   text-decoration: none;
 }
 
-.header .wrapper .carousel .carousel-inner::after, .header .contact-header::after {
+.header .wrapper .carousel .carousel-inner::after, .about-header::after, .header .contact-header::after {
   content: "";
   z-index: 1;
   position: absolute;
@@ -874,82 +874,106 @@ a {
   display: flex;
 }
 
-/* Start About Company */
-.about-company {
-  padding-bottom: 40px;
-}
-.about-company .col-md-6 {
+.about-header {
+  height: 300px;
+  background-color: #00b9f1;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  background-image: url(../img/about-bg.jpg);
+  position: relative;
+  z-index: 2;
 }
-.about-company .col-md-6 .about-company-desc {
-  margin-left: 20px;
+.about-header::after {
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
 }
-.about-company .col-md-6 .about-company-desc h2 {
-  font-family: 'Poppins', sans-serif;
-  padding-bottom: 20px;
+.about-header .heading {
+  margin-top: 70px;
+  font-size: 4rem;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  white-space: nowrap;
+  color: #fff;
+  position: relative;
+  z-index: 5;
 }
-.about-company .col-md-6 .about-company-desc p {
-  font-size: 18px;
-  color: rgba(0, 0, 0, 0.6);
-  line-height: 1.6;
+.about-header .heading::after {
+  content: '';
+  position: absolute;
+  left: -12px;
+  bottom: 0;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border-left: 5px solid #00b9f1;
+  border-bottom: 5px solid #00b9f1;
 }
-.about-company .col-md-6 .about-company-desc ul {
-  padding: 7px;
-}
-.about-company .col-md-6 .about-company-desc ul li {
-  display: flex;
-}
-.about-company .col-md-6 .about-company-desc ul li i {
-  color: #00b9f1;
-  margin-right: 10px;
-  font-size: 18px;
-}
-.about-company .col-md-6 .about-company-desc ul li p {
-  font-size: 18px;
-  color: rgba(0, 0, 0, 0.6);
-}
-@media (max-width: 767px) {
-  .about-company .about-company-desc {
-    margin-left: 0 !important;
-    margin-top: 20px;
-  }
-}
-
-/* End About Company */
-/* Start Our Team Section */
-.our-team {
-  margin: 40px 0;
-}
-.our-team .member-container .img-container {
-  padding: 15px;
-}
-.our-team .member-container .member-desc h3 {
-  margin-bottom: 20px;
-  font-weight: 400;
-  font-family: 'Poppins', sans-serif;
-}
-.our-team .member-container .member-desc p {
-  font-size: 17px;
-  line-height: 1.6;
-  color: rgba(0, 0, 0, 0.6);
-}
-.our-team .member-container .icon-container ul {
-  display: flex;
-  flex-direction: row;
-}
-.our-team .member-container .icon-container ul li {
-  padding: 13px;
-}
-.our-team .member-container .icon-container ul li a {
-  color: rgba(0, 185, 241, 0.9);
-}
-.our-team .member-container .icon-container ul li a:hover {
-  color: #00b9f1;
+.about-header .heading::before {
+  content: '';
+  position: absolute;
+  right: -125px;
+  top: 0;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border-right: 5px solid #00b9f1;
+  border-top: 5px solid #00b9f1;
 }
 
-/* End Our Team Section */
+.about {
+  margin-bottom: 40px;
+}
+.about .about-company {
+  margin-bottom: 30px;
+}
+.about .about-company .about-img img {
+  width: 100%;
+}
+.about .about-company .about-desc {
+  padding-left: 40px;
+}
+.about .about-company .about-desc h3 {
+  font-size: 34px;
+  padding: 10px 0;
+}
+.about .about-company .about-desc p {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.about .about-company .about-desc ul li {
+  display: flex;
+}
+.about .about-company .about-desc ul li i {
+  color: #fe4365;
+  padding: 3px 6px 3px 5px;
+  font-size: 18px;
+}
+.about .banner-bottom {
+  padding: 50px 0;
+}
+.about .banner-bottom .col-md-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.about .banner-bottom .col-md-4 .about-icons {
+  display: flex;
+  justify-content: center;
+}
+.about .banner-bottom .col-md-4 .about-icons i::before {
+  font-size: 75px;
+  color: #fe4365;
+}
+.about .banner-bottom .col-md-4 h4 {
+  font-size: 22px;
+}
+.about .banner-bottom .col-md-4 p {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
 .header .contact-header {
   margin-top: 70px;
   background-image: url("../img/bg contact.jpg");
