@@ -131,7 +131,8 @@
         }
     }
     @media (max-width: 767px){
-        margin-top: 105px;
+        position: relative;
+        top: 105px;
         
         .signup{
             overflow: hidden;
