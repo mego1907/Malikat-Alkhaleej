@@ -9,6 +9,18 @@ for(let i =0; i < navLink.length; i++) {
     })
 }
 
+// Add Class 'added' in cart when i click the button 'add To Cart'
+const cart = document.querySelectorAll('.cart');
+for(let i = 0; i < cart.length; i++){
+    const addToCartBtn = cart[i].children[1].children[2]; // Add To Cart Button
+    const viewCart = cart[i].children[1].children[3]
+    addToCartBtn.addEventListener('click', ()=> {
+        addToCartBtn.innerHTML = `Added <i class="fa fa-check"></i>`
+        addToCartBtn.classList.add('added-btn');
+        viewCart.classList.add('added-view');
+        cart[i].classList.add('added');
+    })
+}
 
 
 // cart
@@ -29,12 +41,39 @@ for(let i = 0; i < productLists.length; i++) {
     })    
 }
 
+// increase and decrease The Price Count 
+let controlQuntity = document.querySelectorAll('.control-quntity')
+
+for(let i = 0; i < controlQuntity.length; i++) {
+    const increase = controlQuntity[i].children[0]
+    let input = controlQuntity[i].children[1];
+    const decrease = controlQuntity[i].children[2]
+    console.log(controlQuntity[0])
+    increase.addEventListener('click', () => {
+        input.value++
+    })
+    decrease.addEventListener('click', () => {
+        input.value--
+        if(input.value < 1) {
+            input.value = 1;
+        }
+    })
+}
+
+// Remove Cart Item Button
+const removeBtn = document.getElementsByClassName('close')
+for(let i =0; i < removeBtn.length; i++) {
+    const button = removeBtn[i];
+    button.addEventListener('click', function(event) {
+        const btnClicked = event.target
+        btnClicked.parentElement.parentElement.remove()
+    })
+}
+
 
 // Counter in About Page
 let counter = document.querySelectorAll('.user-banner .col-md-3 .counter p');
 const userBanner = document.getElementById('userBanner');
-console.log(document.documentElement.scrollTop)
-console.log(userBanner.offsetTop)
 
 document.addEventListener('scroll', function() {
     if(document.documentElement.scrollTop >= document.querySelector('.user-banner').offsetTop - 200){

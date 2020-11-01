@@ -334,6 +334,7 @@ a {
   padding: 10px;
 }
 .products-sec .container .col-md-4 .cart .cart-bottom .price-container, .shop .products-items .container .col-md-4 .cart .cart-bottom .price-container {
+  user-select: none;
   padding-bottom: 40px;
 }
 .products-sec .container .col-md-4 .cart .cart-bottom .price-container .sale, .shop .products-items .container .col-md-4 .cart .cart-bottom .price-container .sale {
@@ -354,6 +355,7 @@ a {
 }
 .products-sec .container .col-md-4 .cart .cart-bottom button, .shop .products-items .container .col-md-4 .cart .cart-bottom button {
   outline: none;
+  user-select: none;
   width: 100%;
   border: none;
   background: #fe4365;
@@ -367,8 +369,35 @@ a {
 .products-sec .container .col-md-4 .cart .cart-bottom button i, .shop .products-items .container .col-md-4 .cart .cart-bottom button i {
   padding-left: 5px;
 }
+.products-sec .container .col-md-4 .cart .cart-bottom .added-btn, .shop .products-items .container .col-md-4 .cart .cart-bottom .added-btn {
+  width: 50%;
+  background-color: #2db731;
+  bottom: 0;
+}
+.products-sec .container .col-md-4 .cart .cart-bottom .view-cart, .shop .products-items .container .col-md-4 .cart .cart-bottom .view-cart {
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  padding: 11px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  display: none;
+}
+.products-sec .container .col-md-4 .cart .cart-bottom .view-cart i, .shop .products-items .container .col-md-4 .cart .cart-bottom .view-cart i {
+  padding-left: 5px;
+}
+.products-sec .container .col-md-4 .cart .cart-bottom .added-view, .shop .products-items .container .col-md-4 .cart .cart-bottom .added-view {
+  display: block;
+}
+.products-sec .container .col-md-4 .added, .shop .products-items .container .col-md-4 .added {
+  border: 1px solid #2db731;
+}
 .products-sec .container .hero-btn, .shop .products-items .container .hero-btn {
   margin: 20px auto;
+  user-select: none;
 }
 .products-sec .container .hero-btn:hover, .shop .products-items .container .hero-btn:hover {
   color: #fff;
@@ -590,6 +619,7 @@ a {
   border: 1px solid #00b9f1;
 }
 .cart-shopping .cart-inner .cart-body .product .close {
+  user-select: none;
   position: absolute;
   right: -10px;
   top: 20px;
@@ -869,6 +899,32 @@ a {
 }
 .shop .products-items .catorgy .col-md-4 .cart .cart-bottom button i {
   padding-left: 5px;
+}
+.shop .products-items .catorgy .col-md-4 .cart .cart-bottom .added-btn {
+  width: 50%;
+  background-color: #2db731;
+  bottom: 0;
+}
+.shop .products-items .catorgy .col-md-4 .cart .cart-bottom .view-cart {
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  padding: 11px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  display: none;
+}
+.shop .products-items .catorgy .col-md-4 .cart .cart-bottom .view-cart i {
+  padding-left: 5px;
+}
+.shop .products-items .catorgy .col-md-4 .cart .cart-bottom .added-view {
+  display: block;
+}
+.shop .products-items .catorgy .col-md-4 .added {
+  border: 1px solid #2db731;
 }
 .shop .products-items .active {
   display: flex;
@@ -1216,7 +1272,7 @@ a {
 
 /* Start Footer section */
 .footer {
-  padding: 60px 0;
+  padding: 30px 0;
   background-color: #333;
 }
 .footer .col-lg-4 h6 {

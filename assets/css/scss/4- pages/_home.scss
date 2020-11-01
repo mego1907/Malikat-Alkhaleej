@@ -37,7 +37,7 @@
                         padding: 10px;
                     }
                     .price-container{
-                        
+                        user-select: none;
                         .sale{
                             font-size: 14px;
                             border: 1px solid #00b9f1;
@@ -58,6 +58,7 @@
                     }
                     button{
                         outline: none;
+                        user-select: none;
                         width: 100%;
                         border: none;
                         background: #fe4365;
@@ -71,11 +72,38 @@
                             padding-left: 5px;
                         }
                     }
+                    .added-btn{
+                        width: 50%;
+                        background-color: #2db731;
+                        bottom: 0;
+                    }
+                    .view-cart{
+                        width: 50%;
+                        position: absolute;
+                        left: 50%;
+                        bottom: 0;
+                        padding: 11px;
+                        background-color: #333;
+                        color: #fff;
+                        text-decoration: none;
+                        user-select: none;
+                        display: none;
+                        i{
+                            padding-left: 5px;
+                        }
+                    }
+                    .added-view{
+                        display: block;
+                    }
                 }
+            }
+            .added{
+                border: 1px solid #2db731;
             }
         }
         .hero-btn{
             margin: 20px auto;
+            user-select: none;
             &:hover{
                 color: #fff;
                 background-color: $primaryColor;

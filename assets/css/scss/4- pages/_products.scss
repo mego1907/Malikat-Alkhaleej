@@ -188,8 +188,34 @@
                                 padding-left: 5px;
                             }
                         }
+                        .added-btn{
+                            width: 50%;
+                            background-color: #2db731;
+                            bottom: 0;
+                        }
+                        .view-cart{
+                            width: 50%;
+                            position: absolute;
+                            left: 50%;
+                            bottom: 0;
+                            padding: 11px;
+                            background-color: #333;
+                            color: #fff;
+                            text-decoration: none;
+                            user-select: none;
+                            display: none;
+                            i{
+                                padding-left: 5px;
+                            }
+                        }
+                        .added-view{
+                            display: block;
+                        }
                     }
                 
+                }
+                .added{
+                    border: 1px solid #2db731;
                 }
             }
         }
