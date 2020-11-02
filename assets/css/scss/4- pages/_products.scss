@@ -120,6 +120,9 @@
     .products-items{
         margin-bottom: 30px;
         display: flex;
+        .row{
+            width: 100%;
+        }
             .catorgy{
                 display: none;
                 flex-direction: row;
@@ -221,6 +224,7 @@
                     }
                 }
             }
+            
         .active{
             display: flex;
         }

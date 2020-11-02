@@ -836,6 +836,9 @@ a {
   margin-bottom: 30px;
   display: flex;
 }
+.shop .products-items .row {
+  width: 100%;
+}
 .shop .products-items .catorgy {
   display: none;
   flex-direction: row;
