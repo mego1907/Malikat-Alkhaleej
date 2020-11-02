@@ -118,107 +118,109 @@
     }
 
     .products-items{
-        @extend .products-sec;
-        .catorgy{
-            display: none;
-            flex-direction: row;
-            flex-wrap: wrap;
-            margin: 40px 0;
-            .col-md-4{
-                position: relative;
-                margin-bottom: 20px;
-                .cart{
+        margin-bottom: 30px;
+        display: flex;
+            .catorgy{
+                display: none;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin: 40px 0;
+                width: 100%;
+                .col-md-4{
                     position: relative;
-                    border: 1px solid #ccc;
-                    text-align: center;
-                    overflow: hidden;
-                    
-                    transition: all 0.3s ease-in-out;
-                    @include size(100%);
-                    &:hover{
-                        border: 1px solid $primaryColor;
+                    margin-bottom: 20px;
+                    .cart{
+                        position: relative;
+                        border: 1px solid #ccc;
+                        text-align: center;
+                        overflow: hidden;
+                        
+                        transition: all 0.3s ease-in-out;
+                        @include size(100%);
+                        &:hover{
+                            border: 1px solid $primaryColor;
+                            .cart-bottom{
+                                button{
+                                    bottom: 0;
+                                }
+                            }
+                        }
+                        .cart-top{
+                            img{
+                                width: 100%;
+                            }
+                        }
                         .cart-bottom{
+                            padding-top: 15px;
+                            .product-name{
+                                padding: 10px;
+                            }
+                            .price-container{
+                                
+                                .sale{
+                                    font-size: 14px;
+                                    border: 1px solid #00b9f1;
+                                    padding: 3px 8px;
+                                    color: #00b9f1;
+                                }
+                                .price{
+                                    margin-top: 10px;
+                                    .new-price{
+                                        color: $primaryColor;
+                                    }
+                                    .old-price{
+                                        color: rgba(#000, 0.6);
+                                        text-decoration: line-through;
+                                    }
+                                }
+                                padding-bottom: 40px;
+                            }
                             button{
+                                outline: none;
+                                width: 100%;
+                                border: none;
+                                background: #fe4365;
+                                color: #fff;
+                                padding: 11px;
+                                position: absolute;
+                                left: 0;
+                                bottom: -46px;
+                                transition: all 0.3s ease-in-out;
+                                i{
+                                    padding-left: 5px;
+                                }
+                            }
+                            .added-btn{
+                                width: 50%;
+                                background-color: #2db731;
                                 bottom: 0;
                             }
-                        }
-                    }
-                    .cart-top{
-                        img{
-                            width: 100%;
-                        }
-                    }
-                    .cart-bottom{
-                        padding-top: 15px;
-                        .product-name{
-                            padding: 10px;
-                        }
-                        .price-container{
-                            
-                            .sale{
-                                font-size: 14px;
-                                border: 1px solid #00b9f1;
-                                padding: 3px 8px;
-                                color: #00b9f1;
-                            }
-                            .price{
-                                margin-top: 10px;
-                                .new-price{
-                                    color: $primaryColor;
-                                }
-                                .old-price{
-                                    color: rgba(#000, 0.6);
-                                    text-decoration: line-through;
+                            .view-cart{
+                                width: 50%;
+                                position: absolute;
+                                left: 50%;
+                                bottom: 0;
+                                padding: 11px;
+                                background-color: #333;
+                                color: #fff;
+                                text-decoration: none;
+                                user-select: none;
+                                display: none;
+                                i{
+                                    padding-left: 5px;
                                 }
                             }
-                            padding-bottom: 40px;
-                        }
-                        button{
-                            outline: none;
-                            width: 100%;
-                            border: none;
-                            background: #fe4365;
-                            color: #fff;
-                            padding: 11px;
-                            position: absolute;
-                            left: 0;
-                            bottom: -46px;
-                            transition: all 0.3s ease-in-out;
-                            i{
-                                padding-left: 5px;
+                            .added-view{
+                                display: block;
                             }
                         }
-                        .added-btn{
-                            width: 50%;
-                            background-color: #2db731;
-                            bottom: 0;
-                        }
-                        .view-cart{
-                            width: 50%;
-                            position: absolute;
-                            left: 50%;
-                            bottom: 0;
-                            padding: 11px;
-                            background-color: #333;
-                            color: #fff;
-                            text-decoration: none;
-                            user-select: none;
-                            display: none;
-                            i{
-                                padding-left: 5px;
-                            }
-                        }
-                        .added-view{
-                            display: block;
-                        }
+                    
                     }
-                
-                }
-                .added{
-                    border: 1px solid #2db731;
+                    .added{
+                        border: 1px solid #2db731;
+                    }
                 }
             }
-        }
         .active{
             display: flex;
         }
