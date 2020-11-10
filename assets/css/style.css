@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 ul, ol {
@@ -19,7 +19,7 @@ a {
   text-decoration: none;
 }
 
-.header .wrapper .carousel .carousel-inner::after, .about-header::after, .user-banner::after, .header .contact-header::after {
+.header .contact-header::after, .user-banner::after, .about-header::after, .header .wrapper .carousel .carousel-inner::after, .sign-user .signup-sec, .sign-user .signin-sec {
   content: "";
   z-index: 1;
   position: absolute;
@@ -27,13 +27,13 @@ a {
   top: 0;
   left: 0;
   right: 0;
-   /*     @include prefixer(background, linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%));
-*/
+  /*     @include prefixer(background, linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%));
+  */
 }
 
 .heading {
   margin-bottom: 3rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 36px;
 }
 @media (max-width: 767px) {
@@ -67,6 +67,198 @@ a {
   right: -40px;
 }
 
+/* Sign In Section */
+.sign-user {
+  display: none;
+}
+.sign-user .signin-sec {
+  position: fixed;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.sign-user .signin-sec .row {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sign-user .signin-sec .row .signin-sec-inner {
+  padding: 20px;
+  background-color: #fff;
+  transform: translateY(-150%);
+  -webkit-animation: slideSign 0.5s ease-in-out forwards;
+  -moz-animation: slideSign 0.5s ease-in-out forwards;
+  -o-animation: slideSign 0.5s ease-in-out forwards;
+  animation: slideSign 0.5s ease-in-out forwards;
+}
+.sign-user .signin-sec .row .signin-sec-inner h3 {
+  font-size: 30px;
+  margin: 30px 0 40px;
+}
+.sign-user .signin-sec .row .signin-sec-inner input {
+  padding: 8px 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.sign-user .signin-sec .row .signin-sec-inner input:focus {
+  border: 1px solid rgba(254, 67, 101, 0.8);
+}
+.sign-user .signin-sec .row .signin-sec-inner a {
+  padding-bottom: 10px;
+}
+.sign-user .signin-sec .row .signin-sec-inner input[type=submit] {
+  background-color: #fe4365;
+  color: #fff;
+  border: none;
+  margin: 10px 0 40px;
+  outline: none;
+}
+.sign-user .signin-sec .row .signin-sec-inner .close-btn {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.sign-user .signin-sec .row .signin-sec-inner .close-btn span {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 27px;
+}
+.sign-user .signin-sec .row .signin-sec-inner .close-btn:hover {
+  border: 1px solid #000;
+}
+.sign-user .signin-sec .row .signin-sec-inner .close-btn:hover span {
+  color: #000;
+}
+.sign-user .signin-sec .row .signin-sec-inner .cr-acc {
+  margin-top: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  user-select: none;
+}
+.sign-user .signin-sec .row .signin-sec-inner .cr-acc p {
+  color: #00b9f1;
+  padding: 22px 0;
+}
+@-webkit-keyframes slideSign {
+  from {
+    transform: translateY(-150%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@-moz-keyframes slideSign {
+  from {
+    transform: translateY(-150%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes slideSign {
+  from {
+    transform: translateY(-150%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.sign-user .signup-sec {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.sign-user .signup-sec .row {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sign-user .signup-sec .row .signup-sec-inner {
+  padding: 20px;
+  background-color: #fff;
+  transform: translateY(-150%);
+  -webkit-animation: slideSign 0.5s ease-in-out forwards;
+  -moz-animation: slideSign 0.5s ease-in-out forwards;
+  -o-animation: slideSign 0.5s ease-in-out forwards;
+  animation: slideSign 0.5s ease-in-out forwards;
+}
+.sign-user .signup-sec .row .signup-sec-inner h3 {
+  font-size: 30px;
+  margin: 30px 0;
+}
+.sign-user .signup-sec .row .signup-sec-inner label {
+  display: block;
+  text-align: left;
+}
+.sign-user .signup-sec .row .signup-sec-inner input {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+.sign-user .signup-sec .row .signup-sec-inner input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+.sign-user .signup-sec .row .signup-sec-inner input[type=submit] {
+  color: #fff;
+  background-image: linear-gradient(to left, #3b3fce, #00b9f1);
+  border: none;
+  outline: none;
+  user-select: none;
+}
+.sign-user .signup-sec .row .signup-sec-inner .close-btn {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+}
+.sign-user .signup-sec .row .signup-sec-inner .close-btn span {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 27px;
+}
+.sign-user .signup-sec .row .signup-sec-inner .close-btn:hover {
+  border: 1px solid #000;
+}
+.sign-user .signup-sec .row .signup-sec-inner .close-btn:hover span {
+  color: #000;
+}
+.sign-user .signup-sec .row .signup-sec-inner .back-signin {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+.sign-user .signup-sec .row .signup-sec-inner .back-signin i {
+  font-size: 22px;
+  line-height: 30px;
+  color: #00000085;
+}
+.sign-user .signup-sec .row .signup-sec-inner .back-signin:hover i {
+  color: #000;
+}
+
 /* header */
 .header {
   overflow: hidden;
@@ -77,7 +269,7 @@ a {
   background-color: #fff;
 }
 .header .navbar .navbar-brand {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: 400;
   color: #fe4365;
@@ -182,7 +374,7 @@ a {
   position: absolute;
 }
 .header .wrapper .wrapper-desc h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   font-size: 40px;
 }
@@ -326,6 +518,7 @@ a {
 }
 .products-sec .container .col-md-4 .cart .cart-top img {
   width: 100%;
+  max-height: 300px;
 }
 .products-sec .container .col-md-4 .cart .cart-bottom {
   padding-top: 15px;
@@ -552,7 +745,7 @@ a {
 }
 .cart-shopping h2 {
   font-size: 50px;
-  font-family: 'Poppins', 'Roboto';
+  font-family: "Poppins", "Roboto";
 }
 .cart-shopping .cart-inner .cart-head {
   padding: 50px 0 0;
@@ -765,7 +958,7 @@ a {
     z-index: 5;
   }
   .header .products-header .col-md-8 .heading::after {
-    content: '';
+    content: "";
     width: 109px;
     height: 63px;
     position: absolute;
@@ -835,6 +1028,7 @@ a {
 .shop .products-items {
   margin-bottom: 30px;
   display: flex;
+  justify-content: center;
 }
 .shop .products-items .row {
   width: 100%;
@@ -867,6 +1061,7 @@ a {
 }
 .shop .products-items .catorgy .col-md-4 .cart .cart-top img {
   width: 100%;
+  max-height: 300px;
 }
 .shop .products-items .catorgy .col-md-4 .cart .cart-bottom {
   padding-top: 15px;
@@ -955,7 +1150,7 @@ a {
 .about-header .heading {
   margin-top: 70px;
   font-size: 4rem;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: bold;
   white-space: nowrap;
   color: #fff;
@@ -963,7 +1158,7 @@ a {
   z-index: 5;
 }
 .about-header .heading::after {
-  content: '';
+  content: "";
   position: absolute;
   left: -12px;
   bottom: 0;
@@ -974,7 +1169,7 @@ a {
   border-bottom: 5px solid #00b9f1;
 }
 .about-header .heading::before {
-  content: '';
+  content: "";
   position: absolute;
   right: -125px;
   top: 0;
@@ -1171,7 +1366,7 @@ a {
   }
 }
 .contact-us .touch-us h3 {
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
 }
 .contact-us .touch-us .contact-items {
@@ -1185,11 +1380,11 @@ a {
 }
 .contact-us .touch-us .contact-items .contact-item i {
   font-size: 55px;
-  color: #00b9f1;
+  color: #fe4365;
 }
 .contact-us .touch-us .contact-items .contact-item h4 {
   padding: 15px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 22px;
 }
 .contact-us .touch-us .contact-items .contact-item p {
@@ -1197,8 +1392,8 @@ a {
   color: #616060;
 }
 .contact-us .touch-us .contact-items .contact-item:nth-of-type(2) {
-  border-left: 1px solid #00b9f1;
-  border-right: 1px solid #00b9f1;
+  border-left: 1px solid #fe4365;
+  border-right: 1px solid #fe4365;
 }
 @media (max-width: 767px) {
   .contact-us .touch-us h3 {
@@ -1224,7 +1419,7 @@ a {
   text-align: center;
   font-size: 25px;
   text-transform: uppercase;
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
 }
 .contact-us .message-section .col-md-8 form {
@@ -1287,7 +1482,7 @@ a {
   color: #fff;
   font-size: 22px;
   padding: 14px 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .footer .col-lg-4 ul li {
   padding: 10px 0;

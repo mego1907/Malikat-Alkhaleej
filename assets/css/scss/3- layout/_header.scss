@@ -1,3 +1,174 @@
+/* Sign In Section */
+.sign-user{
+    display: none;
+    .signin-sec{
+        position: fixed;
+        z-index: 99999;
+        @extend %overlay;
+        background-color: rgba(#000, 0.7);
+        .row{
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            .signin-sec-inner{
+                padding: 20px;
+                background-color: #fff;
+                transform: translateY(-150%);
+                @include animation(slideSign 0.5s ease-in-out forwards);
+                h3{
+                    font-size: 30px;
+                    margin: 30px 0 40px;
+                }
+                input{
+                    padding: 8px 10px;
+                    width: 100%;
+                    margin-bottom: 20px;
+                    outline: none;
+                    border: 1px solid rgba(#000, 0.5);
+                    &:focus{
+                        border: 1px solid rgba($primaryColor, 0.8);
+                    }
+                }
+                a{
+                    padding-bottom: 10px;
+                }
+                input[type='submit'] {
+                    background-color: $primaryColor;
+                    color: #fff;
+                    border: none;
+                    margin: 10px 0 40px;
+                    outline: none;
+                }
+                .close-btn{
+                    position: absolute;
+                    top: 9px;
+                    right: 10px;
+                    @include size(30px);
+                    border: 1px solid rgba(#000, 0.5);
+                    border-radius: 50%;
+                    cursor: pointer;
+                    span{
+                        color: rgba(#000, 0.5);
+                        font-size: 30px;
+                        font-weight: bold;
+                        text-align: center;
+                        line-height: 27px;
+                    }
+                    &:hover{
+                        border: 1px solid #000;
+                        span{
+                            color: #000;
+                        }
+                    }
+                }
+                .cr-acc{
+                    margin-top: 10px;
+                    border-top: 1px solid rgba(#000, 0.3);
+                    cursor: pointer;
+                    user-select: none;
+                    p{
+                        color: $mainColor;
+                        padding: 22px 0 ;
+                    }
+                }
+                @include keyFrame(slideSign) {
+                    from{
+                        transform: translateY(-150%)
+                    }
+                    to{
+                        transform: translateY(0)
+                    }
+                }
+            }
+        }
+    }
+    .signup-sec{
+        display: none;
+        position: fixed;
+        z-index: 99999;
+        @extend %overlay;
+        background-color: rgba(#000, 0.7);
+        .row{
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            .signup-sec-inner{
+                padding: 20px;
+                background-color: #fff;
+                transform: translateY(-150%);
+                @include animation(slideSign 0.5s ease-in-out forwards);
+                h3{
+                    font-size: 30px;
+                    margin: 30px 0;
+                }
+                label{
+                    display: block;
+                    text-align: left;
+                }
+                input{
+                    display: block;
+                    width: 100%;
+                    padding: 8px 10px;
+                    margin-bottom: 15px;
+                    border: 1px solid rgba(#000, 0.5);
+                    outline: none;
+                    &:focus{
+                        border: 1px solid rgba(#000, 0.6);
+                    }
+                }
+                input[type='submit'] {
+                    color: #fff;
+                    background-image: linear-gradient(to left, #3b3fce, $mainColor);
+                    border: none;
+                    outline: none;
+                    user-select: none;
+                }
+                .close-btn{
+                    position: absolute;
+                    top: 9px;
+                    right: 10px;
+                    @include size(30px);
+                    border: 1px solid rgba(#000, 0.5);
+                    border-radius: 50%;
+                    cursor: pointer;
+                    user-select: none;
+                    span{
+                        color: rgba(#000, 0.5);
+                        font-size: 30px;
+                        font-weight: bold;
+                        text-align: center;
+                        line-height: 27px;
+                    }
+                    &:hover{
+                        border: 1px solid #000;
+                        span{
+                            color: #000;
+                        }
+                    }
+                }
+                .back-signin{
+                    position: absolute;
+                    top: 9px;
+                    left: 10px;
+                    @include size(30px);
+                    cursor: pointer;
+                    user-select: none;
+                    i{
+                        font-size: 22px;
+                        line-height: 30px;
+                        color: #00000085;
+                    }
+                    &:hover{
+                        i{
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 /* header */
 .header{

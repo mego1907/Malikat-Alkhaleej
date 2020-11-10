@@ -54,7 +54,7 @@
                 padding: 20px;
                 i{
                     font-size: 55px;
-                    color: $mainColor;
+                    color: $primaryColor;
                 }
                 h4{
                     padding: 15px;
@@ -67,8 +67,8 @@
                 }
             }
             .contact-item:nth-of-type(2){
-                border-left: 1px solid $mainColor;
-                border-right: 1px solid $mainColor;
+                border-left: 1px solid $primaryColor;
+                border-right: 1px solid $primaryColor;
             }
         }
         @media (max-width: 767px) {

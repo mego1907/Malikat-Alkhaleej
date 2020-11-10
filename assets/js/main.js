@@ -1,3 +1,30 @@
+/* Sign In User Section */
+function showSignIn() {
+    const signUser = document.querySelector('.sign-user');
+    const crAcc = document.querySelector('.cr-acc');
+    const closeBtn = document.querySelectorAll('.sign-user .close-btn');
+    const backSignIn = document.querySelector('.back-signin')
+    signUser.style.display = 'block';
+    crAcc.addEventListener('click', () => {
+        signUser.children[0].style.display = 'none'
+        signUser.children[1].style.display = 'block'
+    })
+    
+    backSignIn.addEventListener('click', () => {
+        signUser.children[1].style.display = 'none'
+        signUser.children[0].style.display = 'block'
+    })
+    
+    for(let i = 0; i < closeBtn.length; i++) {
+        closeBtn[i].addEventListener('click', () => {
+            signUser.style.display = 'none'
+        })
+    }
+}
+
+
+
+
 // Navbar
 const navLink = document.querySelectorAll('.nav-item .nav-link'); // Navbar Link
 
@@ -15,6 +42,7 @@ for(let i = 0; i < cart.length; i++){
     const addToCartBtn = cart[i].children[1].children[2]; // Add To Cart Button
     const viewCart = cart[i].children[1].children[3]
     addToCartBtn.addEventListener('click', ()=> {
+        showSignIn()
         addToCartBtn.innerHTML = `Added <i class="fa fa-check"></i>`
         addToCartBtn.classList.add('added-btn');
         viewCart.classList.add('added-view');
@@ -48,7 +76,6 @@ for(let i = 0; i < controlQuntity.length; i++) {
     const increase = controlQuntity[i].children[0]
     let input = controlQuntity[i].children[1];
     const decrease = controlQuntity[i].children[2]
-    console.log(controlQuntity[0])
     increase.addEventListener('click', () => {
         input.value++
     })
@@ -73,11 +100,10 @@ for(let i =0; i < removeBtn.length; i++) {
 
 // Counter in About Page
 let counter = document.querySelectorAll('.user-banner .col-md-3 .counter p');
-const userBanner = document.getElementById('userBanner');
+const userBanner = document.querySelector('.user-banner');
 
 document.addEventListener('scroll', function() {
-    if(document.documentElement.scrollTop >= document.querySelector('.user-banner').offsetTop - 200){
-        console.log('Hello')
+    if(document.documentElement.scrollTop >= userBanner.offsetTop - 200){
         setInterval(()=>{
             if(counter[0].innerHTML < 150) {
                 counter[0].innerHTML++;
