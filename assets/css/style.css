@@ -268,7 +268,7 @@ a {
 }
 @media (max-width: 767px) {
   .sign-user .signup-sec .row .signup-sec-inner {
-    margin: 10px;
+    margin: 40px 0 10px;
   }
   .sign-user .signup-sec .row .signup-sec-inner input {
     margin-bottom: 10px;
