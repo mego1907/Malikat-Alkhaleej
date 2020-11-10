@@ -130,7 +130,8 @@ document.addEventListener('scroll', function() {
 
 
 /* Sign in Page */
-document.querySelector('#btnCreate').addEventListener('click',function(){
+const btnCreate = document.querySelector('.create-acc');
+btnCreate.addEventListener('click',function(){
     document.querySelector('.sign .signin').style.display = 'none'; // hide signin section
     document.querySelector('.sign .signup').style.display = 'block'; // show signup section
 });
