@@ -270,6 +270,9 @@ a {
   .sign-user .signup-sec .row .signup-sec-inner {
     margin: 10px;
   }
+  .sign-user .signup-sec .row .signup-sec-inner input {
+    margin-bottom: 10px;
+  }
   .sign-user .signup-sec .row .signup-sec-inner h3 {
     margin: 20px;
   }
