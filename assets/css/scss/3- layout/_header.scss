@@ -79,6 +79,12 @@
                         transform: translateY(0)
                     }
                 }
+                @media (max-width: 767px) {
+                    margin: 10px;
+                    h3{
+                        margin: 20px
+                    }
+                }
             }
         }
     }
@@ -164,9 +170,16 @@
                         }
                     }
                 }
+                @media (max-width: 767px) {
+                    margin: 10px;
+                    h3{
+                        margin: 20px
+                    }
+                }
             }
         }
     }
+    
 }
 
 

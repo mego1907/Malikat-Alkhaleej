@@ -171,6 +171,14 @@ a {
     transform: translateY(0);
   }
 }
+@media (max-width: 767px) {
+  .sign-user .signin-sec .row .signin-sec-inner {
+    margin: 10px;
+  }
+  .sign-user .signin-sec .row .signin-sec-inner h3 {
+    margin: 20px;
+  }
+}
 .sign-user .signup-sec {
   display: none;
   position: fixed;
@@ -257,6 +265,14 @@ a {
 }
 .sign-user .signup-sec .row .signup-sec-inner .back-signin:hover i {
   color: #000;
+}
+@media (max-width: 767px) {
+  .sign-user .signup-sec .row .signup-sec-inner {
+    margin: 10px;
+  }
+  .sign-user .signup-sec .row .signup-sec-inner h3 {
+    margin: 20px;
+  }
 }
 
 /* header */
