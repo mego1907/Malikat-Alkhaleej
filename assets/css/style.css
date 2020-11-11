@@ -1464,7 +1464,7 @@ a {
 .contact-us .message-section .col-md-8 form textarea:focus {
   border: 1px solid #fe4365;
 }
-.contact-us .message-section .col-md-8 button {
+.contact-us .message-section .col-md-8 input[type=submit] {
   border: none;
   outline: none;
   text-align: center;
@@ -1475,7 +1475,7 @@ a {
   display: flex;
   margin: auto;
 }
-.contact-us .message-section .col-md-8 button:hover {
+.contact-us .message-section .col-md-8 input[type=submit]:hover {
   background-color: transparent;
   color: #fe4365;
   border: 1px solid #fe4365;
