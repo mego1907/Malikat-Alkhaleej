@@ -70,9 +70,27 @@
     .products-list{
         .container{
             display: flex;
-            justify-content: center;
+            justify-content: left;
             align-items: center;
-            ul{
+            select{
+                margin-left: 17px;
+                padding: 10px 8px;
+                border: 1px solid $mainColor;
+                outline: none;
+                user-select: none;
+                &:hover{
+                    border: 1px solid $primaryColor;
+                }
+            }
+            label{
+                margin: 12px;
+                font-size: 20px;
+                color: rgba(#000, 0.6);
+                span{
+                    color: $mainColor;
+                }
+            }
+            /* ul{
                 margin: 0;
                 display: flex;
                 li{
@@ -106,14 +124,7 @@
                         width: 100%;
                     }
                 }
-            }
-        }
-        @media (max-width: 767px) {
-            .container{
-                ul{
-                    flex-wrap: wrap;
-                }
-            }
+            } */
         }
     }
 

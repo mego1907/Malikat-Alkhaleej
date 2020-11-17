@@ -52,7 +52,7 @@ for(let i = 0; i < cart.length; i++){
 
 
 // cart
-const productLists = document.querySelectorAll('.shop .products-list ul li'); // List Item
+/* const productLists = document.querySelectorAll('.shop .products-list ul li'); // List Item
 const catorgy = document.querySelectorAll('.shop .products-items .catorgy'); // Catorgy
 
 for(let i = 0; i < productLists.length; i++) {
@@ -67,7 +67,7 @@ for(let i = 0; i < productLists.length; i++) {
         }
             
     })    
-}
+} */
 
 // increase and decrease The Price Count 
 let controlQuntity = document.querySelectorAll('.control-quntity')
@@ -100,7 +100,9 @@ for(let i =0; i < removeBtn.length; i++) {
 
 // Counter in About Page
 let counter = document.querySelectorAll('.user-banner .col-md-3 .counter p');
-const userBanner = document.querySelector('.user-banner');
+const userBanner = document.querySelector('#userBanner');
+
+
 
 document.addEventListener('scroll', function() {
     if(document.documentElement.scrollTop >= userBanner.offsetTop - 200){

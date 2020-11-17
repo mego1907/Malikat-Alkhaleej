@@ -1001,48 +1001,61 @@ a {
 /* Start Shop */
 .shop .products-list .container {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+  /* ul{
+      margin: 0;
+      display: flex;
+      li{
+          margin: 18px;
+          color: #333;
+          position: relative;
+          font-weight: bold;
+          cursor: pointer;
+          &::after{
+              content: "";
+              width: 0;
+              height: 2px;
+              background-color: $primaryColor;
+              position: absolute;
+              left: 50%;
+              bottom: -8px;
+              transition: all 0.3s ease-in-out;
+          }
+          &:hover{
+              color: $primaryColor;
+              &::after{
+                  left: 0;
+                  width: 100%;
+              }
+          }
+      }
+      .active{
+          color: $primaryColor;
+          &::after{
+              left: 0;
+              width: 100%;
+          }
+      }
+  } */
 }
-.shop .products-list .container ul {
-  margin: 0;
-  display: flex;
+.shop .products-list .container select {
+  margin-left: 17px;
+  padding: 10px 8px;
+  border: 1px solid #00b9f1;
+  outline: none;
+  user-select: none;
 }
-.shop .products-list .container ul li {
-  margin: 18px;
-  color: #333;
-  position: relative;
-  font-weight: bold;
-  cursor: pointer;
+.shop .products-list .container select:hover {
+  border: 1px solid #fe4365;
 }
-.shop .products-list .container ul li::after {
-  content: "";
-  width: 0;
-  height: 2px;
-  background-color: #fe4365;
-  position: absolute;
-  left: 50%;
-  bottom: -8px;
-  transition: all 0.3s ease-in-out;
+.shop .products-list .container label {
+  margin: 12px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.6);
 }
-.shop .products-list .container ul li:hover {
-  color: #fe4365;
-}
-.shop .products-list .container ul li:hover::after {
-  left: 0;
-  width: 100%;
-}
-.shop .products-list .container ul .active {
-  color: #fe4365;
-}
-.shop .products-list .container ul .active::after {
-  left: 0;
-  width: 100%;
-}
-@media (max-width: 767px) {
-  .shop .products-list .container ul {
-    flex-wrap: wrap;
-  }
+.shop .products-list .container label span {
+  color: #00b9f1;
 }
 .shop .products-items {
   margin-bottom: 30px;
