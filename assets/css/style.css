@@ -1045,6 +1045,7 @@ a {
   border: 1px solid #00b9f1;
   outline: none;
   user-select: none;
+  background-color: transparent;
 }
 .shop .products-list .container select:hover {
   border: 1px solid #fe4365;

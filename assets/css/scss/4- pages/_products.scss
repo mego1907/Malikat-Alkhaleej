@@ -78,6 +78,7 @@
                 border: 1px solid $mainColor;
                 outline: none;
                 user-select: none;
+                background-color: transparent;
                 &:hover{
                     border: 1px solid $primaryColor;
                 }
